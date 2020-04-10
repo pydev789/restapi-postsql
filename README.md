@@ -1,13 +1,4 @@
-# Yummy-Recipes-RestAPI
-[![Build Status](https://travis-ci.org/PatrickCmd/Yummy-Recipe-RestAPI.svg?branch=master)](https://travis-ci.org/PatrickCmd/Yummy-Recipe-RestAPI)
-[![Coverage Status](https://coveralls.io/repos/github/PatrickCmd/Yummy-Recipe-RestAPI/badge.svg?branch=master)](https://coveralls.io/github/PatrickCmd/Yummy-Recipe-RestAPI?branch=master)
-[![Maintainability](https://api.codeclimate.com/v1/badges/f0c47514677ca33a508d/maintainability)](https://codeclimate.com/github/PatrickCmd/Yummy-Recipe-RestAPI/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/f0c47514677ca33a508d/test_coverage)](https://codeclimate.com/github/PatrickCmd/Yummy-Recipe-RestAPI/test_coverage)
-```
-```
-Yummy recipes app is an application that allows users  to create, save and share meeting the needs of keeping track of awesome food recipes.
-
-*see the API Documentation by following this [url](https://yummy-recipe-api.herokuapp.com)*
+# restapi-postsql
 
 ## Requirements(Building Blocks)
 - `Python3` - A programming language that lets us work more quickly (The universe loves speed!).
@@ -21,8 +12,8 @@ Yummy recipes app is an application that allows users  to create, save and share
 ## Installation
 First clone this repository
 ```
-$ git clone https://github.com/PatrickCmd/Yummy-Recipe-RestAPI.git
-$ cd Yummy-Recipe-RestAPI
+$ git clone https://github.com/pydev789/restapi-postsql.git
+$ cd restapi-postsql
 ```
 Create virtual environment and install it
 ```
@@ -39,18 +30,18 @@ pip install -r requirements.txt
 At the terminal or console type
 ```
 set APP_SETTINGS=development
-set DATABASE_URL_DEV=postgresql://postgres:@localhost/yummy_api
+set DATABASE_URL_DEV=postgresql://postgres:@localhost/postgres
 psql -U postgres
-postgres# CREATE DATABASE yummy_api
+postgres# CREATE DATABASE dbname
 ```
 ### On linux/Ubuntu or Mac
 At the terminal or console type
 ```
 export APP_SETTINGS=development
-export DATABASE_URL=postgresql://postgres:@localhost/yummy_api
+export DATABASE_URL=postgresql://postgres:@localhost/postgres
 psql -U postgres
 postgres# CREATE ROLE postgres
-postgres# CREATE DATABASE yummy_api
+postgres# CREATE DATABASE dbname
 ```
 
 ## Initialize the database and create database tables
